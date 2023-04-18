@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Hello</title>
 
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
     <div id="app">
 
         <h1>{{ message }}</h1>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img :src="charizardUrl" alt="Charizard">
+              </div>
+              <div class="flip-card-back">
+                <img :src="backCardUrl" alt="Back">
+              </div>
+            </div>
+          </div> 
         
-        <img :src="charizardUrl" alt="Charizard">
 
     </div>
 
