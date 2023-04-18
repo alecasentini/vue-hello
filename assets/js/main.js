@@ -3,7 +3,7 @@ const { createApp } = Vue
 createApp ({
     data() {
         return {
-            message:"Clicca sula carta!",
+            message:"Clicca sulla carta!",
             charizardUrl: './assets/img/004.jpg',
             backCardUrl: './assets/img/back-card.jpg',
             isFlipped: false
