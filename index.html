@@ -14,13 +14,13 @@
 
         <h1>{{ message }}</h1>
 
-        <div class="flip-card">
-            <div class="flip-card-inner">
+        <div class="flip-card" @click="flipCard">
+            <div class="flip-card-inner" :class="{ gira: isFlipped }">
               <div class="flip-card-front">
-                <img :src="charizardUrl" alt="Charizard">
+                <img :src="backCardUrl" alt="Back">
               </div>
               <div class="flip-card-back">
-                <img :src="backCardUrl" alt="Back">
+                <img :src="charizardUrl" alt="Charizard">
               </div>
             </div>
           </div> 

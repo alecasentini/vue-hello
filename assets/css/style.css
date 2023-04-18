@@ -14,7 +14,7 @@
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.gira {
     transform: rotateY(180deg);
 }
 
@@ -26,7 +26,7 @@
     backface-visibility: hidden;
 }
 
-  .flip-card-front img,
+.flip-card-front img,
 .flip-card-back img{
     width: 100%;
     height: 100%;

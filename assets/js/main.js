@@ -3,9 +3,15 @@ const { createApp } = Vue
 createApp ({
     data() {
         return {
-            message:"Hello Vue!",
+            message:"Clicca sula carta!",
             charizardUrl: './assets/img/004.jpg',
-            backCardUrl: './assets/img/back-card.jpg'
+            backCardUrl: './assets/img/back-card.jpg',
+            isFlipped: false
+        }
+    },
+    methods: {
+        flipCard() {
+            this.isFlipped = !this.isFlipped;
         }
     }
 }).mount ("#app")
